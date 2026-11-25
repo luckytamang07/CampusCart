@@ -1,0 +1,35 @@
+CAMPUSCART FLUTTER - RUN GUIDE
+
+1. Extract this ZIP to Downloads.
+2. Open the folder CampusCart_Flutter_New in Android Studio.
+3. Open Android Studio Terminal.
+4. Run:
+   flutter pub get
+5. If Android folder is not present, run:
+   .\setup_android.bat
+6. Check the phone:
+   flutter devices
+7. Start the app:
+   flutter run -d <your-device-id>
+
+BACKEND
+Make sure the MERNova backend is running on port 5000.
+This Flutter app is configured for:
+http://192.168.0.139:5000/api
+
+The phone and laptop must be on the same Wi-Fi.
+If your laptop IP changes, edit lib/services/api_service.dart and update baseUrl.
+
+APP FLOW
+Login / Signup
+   -> Dashboard
+   -> Home
+   -> Browse
+   -> Product Details
+   -> Buy
+   -> Orders
+   -> Sell
+   -> Profile
+
+IMPORTANT
+Do not open the inner folder twice. The ZIP extracts directly to one folder named CampusCart_Flutter_New.
